@@ -24,6 +24,8 @@ module.exports = {
       backgroundImage: {
         "hero-mobile":
           "url('/starter-code/images/homepage/hero-bg-mobile.jpg')",
+        "ready-mobile":
+          "url('/starter-code/images/homepage/ready-bg-mobile.jpg')",
       },
     },
   },

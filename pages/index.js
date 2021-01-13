@@ -1,4 +1,5 @@
 import About from "../components/About";
+import Events from "../components/Events";
 import Landing from "../components/Landing";
 import Layout from "../components/Layout";
 import Menu from "../components/Menu";
@@ -9,6 +10,7 @@ export default function Home() {
       <Landing />
       <About />
       <Menu />
+      <Events />
     </Layout>
   );
 }

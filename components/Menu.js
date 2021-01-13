@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Menu() {
   return (
-    <div className="w-full flex flex-col items-center bg-black pb-20">
+    <div className="w-full flex flex-col items-center bg-black pb-10">
       <img
         src="/starter-code/images/patterns/pattern-divide.svg"
         alt="divide pattern"

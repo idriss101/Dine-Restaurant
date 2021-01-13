@@ -3,7 +3,7 @@ import React from "react";
 export default function Landing() {
   return (
     <div>
-      <div className="w-screen bg-hero-mobile flex flex-col items-center no-repeat bg-cover pb-14">
+      <div className="w-screen bg-hero-mobile flex flex-col items-center no-repeat bg-cover pb-36">
         <div className=" w-10/12 mt-64 text-center flex flex-col items-center">
           <img
             src="/starter-code/images/logo.svg"

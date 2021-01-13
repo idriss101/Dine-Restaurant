@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 
 export default function Layout({ title, children }) {
   return (
@@ -7,7 +8,7 @@ export default function Layout({ title, children }) {
         <title>{title}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>{children}</main>`
+      <main className="font-spartan">{children}</main>
     </div>
   );
 }

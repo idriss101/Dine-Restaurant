@@ -28,6 +28,8 @@ module.exports = {
           "url('/starter-code/images/homepage/ready-bg-mobile.jpg')",
         "hero-tablet":
           "url('/starter-code/images/homepage/hero-bg-tablet.jpg')",
+        "ready-tablet":
+          "url('/starter-code/images/homepage/ready-bg-tablet.jpg')",
       },
     },
   },

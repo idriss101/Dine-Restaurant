@@ -8,7 +8,9 @@ export default function Layout({ title, children }) {
         <title>{title}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="font-spartan w-screen">{children}</main>
+      <main className="font-spartan w-screen overflow-x-hidden">
+        {children}
+      </main>
     </div>
   );
 }

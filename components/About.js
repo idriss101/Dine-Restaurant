@@ -3,7 +3,7 @@ import React from "react";
 export default function About() {
   let isTablet;
   if (typeof window !== "undefined") {
-    isTablet = window.matchMedia("(min-width:768px)").matches;
+    isTablet = window.matchMedia("(min-width:700px)").matches;
   }
   const showpatternTablet = () => {
     if (isTablet === true) {

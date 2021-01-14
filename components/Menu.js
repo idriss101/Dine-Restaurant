@@ -17,12 +17,12 @@ export default function Menu() {
           our diner’s favourites. Our menu is revamped every season.
         </p>
       </div>
-      <div className="text-white flex flex-col items-center text-center pb-10 md:flex-row md:text-left md:w-11/12 md:items-start ">
+      <div className="text-white flex flex-col items-center text-center pb-10 md:flex-row md:text-left md:w-8/12 md:items-start ">
         <div className="">
           <img
             src="/starter-code/images/homepage/salmon-mobile.jpg"
             alt="salmon dish"
-            className="object-contain w-4/6 mb-8 "
+            className="object-contain w-full mb-8 md:w-9/12 "
           />
         </div>
 
@@ -34,38 +34,38 @@ export default function Menu() {
           </p>
         </div>
       </div>
-      <hr className="w-11/12" />
-      <div className="text-white flex flex-col items-center pb-10 mt-10 text-center ">
+      <hr className="w-11/12 md:w-8/12" />
+      <div className="text-white flex flex-col items-center text-center pb-10 md:flex-row md:text-left md:w-8/12 md:items-start md:mt-10">
         <div className="">
           <img
             src="/starter-code/images/homepage/beef-mobile.jpg"
             alt="beef dish"
-            className="object-contain w-full mb-8"
+            className="object-contain w-full mb-8 md:w-9/12 "
           />
         </div>
-        <div className="">
+        <div className="w-8/12 mt-5">
           <h3 className="font-bold text-lg mb-2">Rosemary Filet Mignon</h3>
-          <p className="text-center font-extra-light">
+          <p className="text-center font-extra-light md:text-left">
             Our prime beef served to your taste with a delicious choice of
             seasonal sides.
           </p>
         </div>
       </div>
-      <hr className="w-11/12" />
-      <div className="text-white flex flex-col items-center pb-10 mt-10 text-center ">
+      <hr className="w-11/12 md:w-8/12" />
+      <div className="text-white flex flex-col items-center text-center pb-10 md:flex-row md:text-left md:w-8/12 md:items-start md:mt-10 ">
         <div className="">
           <img
             src="/starter-code/images/homepage/chocolate-mobile.jpg"
             alt="chocolate dish"
-            className="object-contain w-full mb-8"
+            className="object-contain w-full mb-8 md:w-9/12 "
           />
         </div>
 
-        <div className="w-10/12 flex flex-col items-center">
+        <div className="w-10/12 flex flex-col items-center md:w-8/12 ">
           <h3 className="font-bold text-lg mb-2">
             Summer Fruit Chocolate Mousse
           </h3>
-          <p className="text-center font-extra-light">
+          <p className="text-center font-extra-light md:text-left ">
             Creamy mousse combined with summer fruits and dark chocolate
             shavings.
           </p>

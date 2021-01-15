@@ -2,8 +2,10 @@ import React from "react";
 
 export default function About() {
   let isTablet;
+  let isDesktop;
   if (typeof window !== "undefined") {
     isTablet = window.matchMedia("(min-width:700px)").matches;
+    isDesktop = window.matchMedia("(min-width: 1024px)").matches;
   }
   const showpatternTablet = () => {
     if (isTablet === true) {
@@ -25,26 +27,33 @@ export default function About() {
       return null;
     }
   };
+  const getDeviceSize = () => {
+    if (isDesktop === true) {
+      return "desktop";
+    } else if (isTablet === true) {
+      return "tablet";
+    } else {
+      return "mobile";
+    }
+  };
   return (
     <div className="mx-auto w-11/12 flex flex-col items-center relative pb-10">
       {showpatternTablet()}
       <img
-        src={`/starter-code/images/homepage/enjoyable-place-${
-          isTablet ? "tablet" : "mobile"
-        }.jpg`}
+        src={`/starter-code/images/homepage/enjoyable-place-${getDeviceSize()}.jpg`}
         alt="enjoyable place image"
-        className="object-contain absolute -top-20 shadow-2xl block w-11/12"
+        className="object-contain absolute -top-20 shadow-2xl block w-11/12 lg:w-4/12 lg:left-24"
       />
       <img
         src="/starter-code/images/patterns/pattern-divide.svg"
         alt="divide pattern"
-        className="object-contain w-20 mt-96"
+        className="object-contain w-20 mt-96 lg:mt-40 lg:ml-20"
       />
-      <div className="text-center mt-10 w-11/12 mb-16 md:w-7/12">
-        <h2 className="text-4xl font-bold mb-5">
+      <div className="text-center mt-10 w-11/12 mb-16 md:w-7/12  lg: ml-96 lg:pl-20 lg:w-5/12">
+        <h2 className="text-4xl font-bold mb-5 lg:text-left">
           Enjoyable place for all the family
         </h2>
-        <p>
+        <p className="lg:text-left">
           Our relaxed surroundings make dining with us a great experience for
           everyone. We can even arrange a tour of the farm before your meal.
         </p>

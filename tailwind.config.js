@@ -30,6 +30,8 @@ module.exports = {
           "url('/starter-code/images/homepage/hero-bg-tablet.jpg')",
         "ready-tablet":
           "url('/starter-code/images/homepage/ready-bg-tablet.jpg')",
+        "hero-desktop":
+          "url('/starter-code/images/homepage/hero-bg-desktop.jpg')",
       },
     },
   },

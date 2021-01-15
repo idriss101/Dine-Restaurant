@@ -1,6 +1,10 @@
 import React from "react";
 
 export default function Menu() {
+  let isTablet;
+  if (typeof window !== "undefined") {
+    isTablet = window.matchMedia("(min-width:700px)").matches;
+  }
   return (
     <div className="w-full flex flex-col items-center bg-black pb-10">
       <img
@@ -18,12 +22,21 @@ export default function Menu() {
         </p>
       </div>
       <div className="text-white flex flex-col items-center text-center pb-10 md:flex-row md:text-left md:w-8/12 md:items-start ">
-        <div className="">
-          <img
-            src="/starter-code/images/homepage/salmon-mobile.jpg"
-            alt="salmon dish"
-            className="object-contain w-full mb-8 md:w-9/12 "
-          />
+        <div className="relative z-0">
+          <>
+            {/* {isTablet && (
+              <img
+                src="/starter-code/images/patterns/pattern-divide.svg"
+                alt="divider"
+                className="absolute top-5 right-5 z-10"
+              />
+            )} */}
+            <img
+              src="/starter-code/images/homepage/salmon-mobile.jpg"
+              alt="salmon dish"
+              className="object-contain w-full mb-8 md:w-9/12 z-0"
+            />
+          </>
         </div>
 
         <div className="w-8/12 mt-5">

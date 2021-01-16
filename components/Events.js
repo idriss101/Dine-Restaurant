@@ -13,7 +13,7 @@ export default function Events() {
         <img
           src="/starter-code/images/patterns/pattern-curve-top-left.svg"
           alt="pattern svg"
-          className="object-contain w-full absolute -left-96 top-0 z-0 rounded-full"
+          className="object-contain w-full absolute -left-96 top-0 z-0 rounded-full xl:w-6/12"
         />
       );
     } else {
@@ -32,7 +32,7 @@ export default function Events() {
   return (
     <div className="w-full flex flex-col items-center relative">
       {showpatternTablet()}
-      <div className="lg:flex lg:justify-around lg:w-full lg:py-20 lg:mx-auto ">
+      <div className="lg:flex lg:justify-around lg:w-full lg:py-20 xl:justify-center xl:w-1/2 ">
         <div className="relative lg:h-full lg:ml-20">
           {isTablet && (
             <img
@@ -47,7 +47,7 @@ export default function Events() {
             className="shadow-2xl mt-16 mb-10 "
           />
         </div>
-        <div className="lg:flex lg:flex-col-reverse lg:w-4/6 lg:ml-28 lg:h-full  ">
+        <div className="lg:flex lg:flex-col-reverse lg:w-4/6 lg:ml-28 lg:h-full xl:w-2/6 xl:ml-56">
           <ul className="text-center md:flex md:w-11/12 md:justify-around lg:flex-col lg:items-start lg:mb-10 ">
             <li className="font-semibold uppercase tracking-widest border-solid mb-3">
               Family Gathering
@@ -59,7 +59,7 @@ export default function Events() {
               Social Events
             </li>
           </ul>
-          <div className="text-center mt-10 w-11/12 mb-14 md:w-6/12 md:mb-10 lg:w-5/6 lg:mt-20 ">
+          <div className="text-center mt-10 w-11/12 mb-14 md:w-6/12 md:mb-10 lg:w-5/6 lg:mt-20 xl:w-5/6">
             <h2 className="text-3xl font-bold mb-5 md:text-4xl lg:text-left">
               Family Gathering
             </h2>

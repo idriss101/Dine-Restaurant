@@ -8,7 +8,7 @@ export default function Landing() {
   return (
     <div>
       <div className="w-screen bg-hero-mobile flex flex-col items-center no-repeat bg-cover pb-36 md:bg-hero-tablet lg:bg-hero-desktop lg:items-start lg:bg-right">
-        <div className=" w-10/12 mt-64 text-center flex flex-col items-center md:mt-96 lg:w-6/12 lg:items-start lg:mt-20 lg:ml-20 ">
+        <div className=" w-10/12 mt-64 text-center flex flex-col items-center md:mt-96 lg:w-6/12 lg:items-start lg:mt-20 lg:ml-20 xl:ml-40 xl:w-4/12">
           <img
             src="/starter-code/images/logo.svg"
             alt="company logo"

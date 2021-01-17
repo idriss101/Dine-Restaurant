@@ -4,8 +4,8 @@ export default function About() {
   let isTablet;
   let isDesktop;
   if (typeof window !== "undefined") {
-    isTablet = window.matchMedia("(min-width:700px)").matches;
-    isDesktop = window.matchMedia("(min-width: 1024px)").matches;
+    isTablet = window.matchMedia("screen and (min-width:700px)").matches;
+    isDesktop = window.matchMedia("screen and (min-width: 1024px)").matches;
   }
   const showpatternTablet = () => {
     if (isTablet === true) {

@@ -3,8 +3,10 @@ export default function Events(props) {
   let isTablet;
   let isDesktop;
   if (typeof window !== "undefined") {
-    isTablet = window.matchMedia("screen and (min-width:700px)").matches;
-    isDesktop = window.matchMedia("screen and (min-width: 1024px)").matches;
+    window.onload = () => {
+      isTablet = window.matchMedia("screen and (min-width:700px)").matches;
+      isDesktop = window.matchMedia("screen and (min-width: 1024px)").matches;
+    };
   }
   const getDeviceSize = () => {
     if (isDesktop === true) {

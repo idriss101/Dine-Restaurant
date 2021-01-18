@@ -1,12 +1,16 @@
 import React from "react";
-
+import useReactSimpleMatchMedia from "react-simple-matchmedia";
 export default function About() {
-  let isTablet;
-  let isDesktop;
-  if (typeof window !== "undefined") {
-    isTablet = window.matchMedia("screen and (min-width:700px)").matches;
-    isDesktop = window.matchMedia("screen and (min-width: 1024px)").matches;
-  }
+  // let isTablet;
+  // let isDesktop;
+  // if (typeof window !== "undefined") {
+  //   isTablet = window.matchMedia("screen and (min-width:700px)").matches;
+  //   isDesktop = window.matchMedia("screen and (min-width: 1024px)").matches;
+  // }
+  const isPhone = useReactSimpleMatchMedia("phone");
+  const isTablet = useReactSimpleMatchMedia("tablet");
+  const isDesktop = useReactSimpleMatchMedia("desktop");
+
   const showpatternTablet = () => {
     if (isTablet === true) {
       return (
@@ -28,23 +32,50 @@ export default function About() {
     }
   };
   const getDeviceSize = () => {
-    if (isDesktop === true) {
-      return "desktop";
-    } else if (isTablet === true) {
-      return "tablet";
+    if (isPhone) {
+      return (
+        <img
+          src={`/starter-code/images/homepage/enjoyable-place-mobile.jpg`}
+          alt="enjoyable place image"
+          className="object-contain -mt-20 shadow-2xl block md:hidden lg:hidden w-11/12 lg:w-96 lg:left-24 xl:mr-40"
+        />
+      );
+    } else if (isTablet) {
+      return (
+        <img
+          src={`/starter-code/images/homepage/enjoyable-place-tablet.jpg`}
+          alt="enjoyable place image"
+          className="object-contain hidden -mt-20 shadow-2xl md:block lg:hidden w-11/12 lg:w-96 lg:left-24 xl:mr-40"
+        />
+      );
     } else {
-      return "mobile";
+      return (
+        <img
+          src={`/starter-code/images/homepage/enjoyable-place-desktop.jpg`}
+          alt="enjoyable place image"
+          className="object-contain -mt-20 shadow-2xl block w-11/12 lg:w-96 lg:left-24 xl:mr-40"
+        />
+      );
     }
   };
   return (
     <div className="mx-auto w-screen flex flex-col items-center relative pb-10 ">
       {showpatternTablet()}
-
       <div className="flex flex-col items-center lg:flex-row lg:justify-around lg:w-11/12 lg:mb-40 xl:w-7/12 xl:justify-center">
         <img
-          src={`/starter-code/images/homepage/enjoyable-place-${getDeviceSize()}.jpg`}
+          src={`/starter-code/images/homepage/enjoyable-place-mobile.jpg`}
           alt="enjoyable place image"
-          className="object-contain -mt-20 shadow-2xl block w-11/12 lg:w-96 lg:left-24 xl:mr-40"
+          className="object-contain -mt-20 shadow-2xl block md:hidden lg:hidden w-11/12 lg:w-96 lg:left-24 xl:mr-40"
+        />
+        <img
+          src={`/starter-code/images/homepage/enjoyable-place-tablet.jpg`}
+          alt="enjoyable place image"
+          className="object-contain hidden -mt-20 shadow-2xl md:block lg:hidden w-11/12 lg:w-96 lg:left-24 xl:mr-40"
+        />
+        <img
+          src={`/starter-code/images/homepage/enjoyable-place-desktop.jpg`}
+          alt="enjoyable place image"
+          className="object-contain -mt-20 shadow-2xl hidden md:hidden lg:block w-11/12 lg:w-96 lg:left-24 xl:mr-40"
         />
         <div className="text-center flex flex-col items center mt-10 w-11/12 mb-16 md:w-7/12 lg:w-4/12 lg:mt-20 ">
           <img

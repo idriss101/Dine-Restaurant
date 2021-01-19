@@ -2,10 +2,10 @@ import React from "react";
 
 export default function BookingForm() {
   return (
-    <div className="h-4/6 ">
+    <div className="xl:h-4/6">
       <form
         action=""
-        className="bg-white flex flex-col items-center w-5/6  pb-10 shadow-2xl mx-auto -mt-32 z-50 overflow-visible mb-20 lg:w-4/6 xl:w-3/6 "
+        className="bg-white flex flex-col items-center w-5/6  pb-20 shadow-2xl mx-auto -mt-32 z-50 overflow-visible mb-40 lg:w-4/6 xl:w-3/6 "
       >
         <input
           type="text"

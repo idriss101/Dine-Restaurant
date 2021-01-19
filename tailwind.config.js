@@ -34,6 +34,8 @@ module.exports = {
           "url('/starter-code/images/homepage/hero-bg-desktop.jpg')",
         "ready-desktop":
           "url('/starter-code/images/homepage/ready-bg-desktop.jpg')",
+        "hero-mobile-booking":
+          "url('/starter-code/images/booking/hero-bg-mobile.jpg')",
       },
     },
   },

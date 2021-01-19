@@ -55,7 +55,7 @@ export default function About() {
           <img
             src={`/starter-code/images/homepage/locally-sourced-mobile.jpg`}
             alt="enjoyable place image"
-            className="object-contain md:hidden lg:hidden shadow-2xl w-96 lg:-mb-20 xl:ml-40"
+            className="object-contain md:hidden lg:hidden shadow-2xl w-80 lg:-mb-20 xl:ml-40"
           />
           <img
             src={`/starter-code/images/homepage/locally-sourced-tablet.jpg`}

@@ -18,13 +18,15 @@ export default function Landing() {
             Experience our seasonal menu in beautiful country surroundings. Eat
             the freshest produce from the comfort of our farmhouse.
           </p>
-          <div className="border-white border-solid border py-5 px-14 hover:bg-white hover:text-black transition-all cursor-pointer text-white">
-            <p className=" uppercase font-medium text-md hover:text-black">
-              <Link href="/booking">
-                <a>Book a table</a>
-              </Link>
-            </p>
-          </div>
+          <Link href="/booking">
+            <a>
+              <div className="border-white border-solid border py-5 px-14 hover:bg-white hover:text-black transition-all cursor-pointer text-white">
+                <p className=" uppercase font-medium text-md hover:text-black">
+                  Book a table
+                </p>
+              </div>
+            </a>
+          </Link>
         </div>
       </div>
     </div>

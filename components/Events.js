@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from "next/link";
 export default function Events(props) {
   const [eventContent, setEventContent] = useState({
     title: "Family Gathering",
@@ -106,7 +107,9 @@ export default function Events(props) {
             </p>
             <div className="bg-black text-white  py-5 px-16 mb-10 lg:px-10 lg:mb-0 xl:px-10 xl:w-1/2 hover:bg-white hover:text-black border border-solid hover:border-black cursor-pointer transition-all">
               <p className="uppercase font-medium tracking-wide">
-                Book a table
+                <Link href="/booking">
+                  <a>Book a table</a>
+                </Link>
               </p>
             </div>
           </div>
@@ -118,7 +121,11 @@ export default function Events(props) {
           Ready to make a reservation?
         </h4>
         <div className=" py-5 px-16 border border-solid border-white mb-20 lg:mb-0  hover:bg-white hover:text-black transition-all cursor-pointer text-white">
-          <p className=" uppercase font-medium tracking-wide">Book a table</p>
+          <p className=" uppercase font-medium tracking-wide">
+            <Link href="/booking">
+              <a>Book a table</a>
+            </Link>
+          </p>
         </div>
       </div>
     </div>

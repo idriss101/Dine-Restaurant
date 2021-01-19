@@ -1,10 +1,7 @@
 import React from "react";
+import Link from "next/link";
 
 export default function Landing() {
-  let isTablet;
-  if (typeof window !== "undefined") {
-    isTablet = window.matchMedia("(min-width:768px)").matches;
-  }
   return (
     <div>
       <div className="w-screen bg-hero-mobile flex flex-col items-center no-repeat bg-cover pb-36 md:bg-hero-tablet lg:bg-hero-desktop lg:items-start lg:bg-right">
@@ -23,7 +20,9 @@ export default function Landing() {
           </p>
           <div className="border-white border-solid border py-5 px-14 hover:bg-white hover:text-black transition-all cursor-pointer text-white">
             <p className=" uppercase font-medium text-md hover:text-black">
-              Book a table
+              <Link href="/booking">
+                <a>Book a table</a>
+              </Link>
             </p>
           </div>
         </div>

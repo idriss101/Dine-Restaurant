@@ -11,15 +11,15 @@ export default function Footer() {
         />
       </div>
       <div className="flex flex-col items-center md:items-start lg:flex-row lg:justify-center">
-        <div className="">
-          <p className="font-extra-light uppercase text-sm tracking-widest w-4/6 text-center mb-2 md:text-left md:w-5/6 ">
+        <div className="flex flex-col items-center md:items-start">
+          <p className="font-extra-light  uppercase text-sm tracking-widest w-4/6 text-center mb-2 md:text-left md:w-5/6 ">
             Marthwaite, Sedbergh Cumbria
           </p>
           <p className="font-extra-light uppercase text-sm tracking-widest mb-10 md:text-left">
             +00 44 123 4567
           </p>
         </div>
-        <div className="">
+        <div className="flex flex-col items-center md:items-start">
           <p className="font-extra-light uppercase text-sm tracking-widest mb-2">
             Open Times
           </p>

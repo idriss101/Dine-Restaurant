@@ -11,7 +11,7 @@ export default function Menu() {
         <img
           src="/starter-code/images/patterns/pattern-divide.svg"
           alt="divide pattern"
-          className="object-contain w-20 mt-16 lg:mt-0 lg:mb-10"
+          className="object-contain w-20 mt-16 mx-auto mb-10 lg:mt-0 lg:mb-10 lg:mx-0"
         />
         <h2 className="text-4xl font-bold mb-5 lg:text-left">
           A few highlights from our menu
@@ -21,7 +21,7 @@ export default function Menu() {
           our diner’s favourites. Our menu is revamped every season.
         </p>
       </div>
-      <div className="lg:mr-20">
+      <div className="lg:mr-20 md:flex md:flex-col md:items-center">
         <div className="text-white flex flex-col items-center text-center pb-10 md:flex-row md:text-left md:w-8/12 md:items-start lg:w-full">
           <div className="relative z-0">
             <img
@@ -39,7 +39,7 @@ export default function Menu() {
             </p>
           </div>
         </div>
-        <hr className="w-11/12 md:w-8/12 lg:w-full" />
+        <hr className="w-11/12 mx-auto md:w-8/12 lg:w-full" />
         <div className="text-white flex flex-col items-center text-center mt-10 pb-10 md:flex-row md:text-left md:w-8/12 md:items-start md:mt-10 lg:w-full">
           <div className="">
             <img
@@ -56,7 +56,7 @@ export default function Menu() {
             </p>
           </div>
         </div>
-        <hr className="w-11/12 md:w-8/12 lg:w-full" />
+        <hr className="w-11/12 mx-auto md:w-8/12 lg:w-full" />
         <div className="text-white flex flex-col items-center mt-10 text-center pb-10 md:flex-row md:text-left md:w-8/12 md:items-start md:mt-10 lg:w-full">
           <div className="">
             <img
